@@ -18,7 +18,6 @@ const AllFiles = () => {
       {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
       <Card.Body>
         <Card.Title>{item}</Card.Title>
-        
         <Button href={item} variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>

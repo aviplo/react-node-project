@@ -13,13 +13,19 @@ const File = () => {
     <div>
     <Nav defaultActiveKey="/home" as="ul">
     <Nav.Item as="li">
-      <Nav.Link href={`/${url}/info`}>infoo</Nav.Link>
+      <Nav.Link href={`/${url}/info`}>Info</Nav.Link>
     </Nav.Item>
     <Nav.Item as="li">
-      <Nav.Link eventKey="link-1">show</Nav.Link>
+      <Nav.Link href={`/${url}/show`} eventKey="link-1">show</Nav.Link>
     </Nav.Item>
     <Nav.Item as="li">
-      <Nav.Link eventKey="link-2">rename</Nav.Link>
+      <Nav.Link href={`/${url}/rename`} eventKey="link-2">rename</Nav.Link>
+    </Nav.Item>
+    <Nav.Item as="li">
+      <Nav.Link href={`/${url}/delete`} eventKey="link-2">delete</Nav.Link>
+    </Nav.Item>
+    <Nav.Item as="li">
+      <Nav.Link href={`/${url}/copy`} eventKey="link-2">copy</Nav.Link>
     </Nav.Item>
   </Nav>
   <Outlet/>
